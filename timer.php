@@ -79,6 +79,8 @@
 				<label id="buttonTimer" for="start">Lancer</label>
 				<label id="buttonTimer" for="stop">Arrêter</label>
 				<label id="buttonTimer" for="reset">Réinitialiser</label>
+				
+				
 			</div>
 			<br/>
 			<br/>
@@ -91,13 +93,13 @@
 			<div id="mydiv">
 			
 				<img id="image" src="images/batterie.png">
-				<h2 id="text"></h2>
+				<h2 id="text"></h>
 
 				<script type="text/javascript" src="js/pile.js"></script>
 				
 			</div>
 			</center>
-
+		
 			</p>
 			<br/>
 			<br/>
