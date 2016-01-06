@@ -36,7 +36,7 @@
 		<div class="jumbotron">
 			<img src="images/logo.png" alt="HTML5 Icon" style="width:200px;height:200px;"/>
 			<h1>Watt The Park</h1>
-			<form id="myForm" type="text" method="post" action="timer.php">
+			<form id="myForm" type="text" method="post" action="fin.php">
 				<label>Votre pseudo</label> : <input id="pseudoClass" name="pseudo"/>	
 			</form>
 		<br/>

@@ -19,6 +19,8 @@
     <!-- Custom styles for this template -->
 	<link href="css/accueil.css" rel="stylesheet">
     <link href="css/timer.css" rel="stylesheet">
+	
+	<script type="text/javascript" src="js/timer.js"></script>
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -32,53 +34,87 @@
   </head>
 <body>
 	<div class="container">
-	<div class="jumbotron">
-		<input id="start" name="controls" type="radio" />
-		<input id="stop" name="controls" type="radio" />
-		<input id="reset" name="controls" type="radio" />
-		<div class="timer">
-			<div class="cell">
-				<div class="numbers tenhour moveten">0 1 2 3 4 5 6 7 8 9</div>
+	
+			
+		<div class="jumbotron">
+			<input id="start" name="controls" type="radio" />
+			<input id="stop" name="controls" type="radio" />
+			<input id="reset" name="controls" type="radio" />
+			<div class="timer">
+				<div class="cell">
+					<div class="numbers tenhour moveten">0 1 2 3 4 5 6 7 8 9</div>
+				</div>
+				<div class="cell">
+					<div class="numbers hour moveten">0 1 2 3 4 5 6 7 8 9</div>
+				</div>
+				<div class="cell divider"><div class="numbers">:</div></div>
+				<div class="cell">
+					<div class="numbers tenminute movesix">0 1 2 3 4 5 6</div>
+				</div>
+				<div class="cell">
+					<div class="numbers minute moveten">0 1 2 3 4 5 6 7 8 9</div>
+				</div>
+				<div class="cell divider"><div class="numbers">:</div></div>
+				<div class="cell">
+					<div class="numbers tensecond movesix">0 1 2 3 4 5 6</div>
+				</div>
+				<div class="cell">
+					<div class="numbers second moveten">0 1 2 3 4 5 6 7 8 9</div>
+				</div>
+				<div class="cell divider"><div class="numbers">:</div></div>
+				<div class="cell">
+					<div class="numbers milisecond moveten">0 1 2 3 4 5 6 7 8 9</div>
+				</div>
+				<div class="cell">
+					<div class="numbers tenmilisecond moveten">0 1 2 3 4 5 6 7 8 9</div>
+				</div>
+				<div class="cell">
+					<div class="numbers hundredmilisecond moveten">0 1 2 3 4 5 6 7 8 9</div>
+				</div>
 			</div>
-			<div class="cell">
-				<div class="numbers hour moveten">0 1 2 3 4 5 6 7 8 9</div>
+			<br/>
+			<br/>
+			<br/>
+			<div id="timer_controls">
+				<label id="buttonTimer" for="start">Lancer</label>
+				<label id="buttonTimer" for="stop">Arrêter</label>
+				<label id="buttonTimer" for="reset">Réinitialiser</label>
 			</div>
-			<div class="cell divider"><div class="numbers">:</div></div>
-			<div class="cell">
-				<div class="numbers tenminute movesix">0 1 2 3 4 5 6</div>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<p>
+			<center>
+			<div id="mydiv">
+			
+				<img id="image" src="images/batterie.png">
+				<h2 id="text"></h2>
+
+				<script type="text/javascript" src="js/pile.js"></script>
+				
 			</div>
-			<div class="cell">
-				<div class="numbers minute moveten">0 1 2 3 4 5 6 7 8 9</div>
-			</div>
-			<div class="cell divider"><div class="numbers">:</div></div>
-			<div class="cell">
-				<div class="numbers tensecond movesix">0 1 2 3 4 5 6</div>
-			</div>
-			<div class="cell">
-				<div class="numbers second moveten">0 1 2 3 4 5 6 7 8 9</div>
-			</div>
-			<div class="cell divider"><div class="numbers">:</div></div>
-			<div class="cell">
-				<div class="numbers milisecond moveten">0 1 2 3 4 5 6 7 8 9</div>
-			</div>
-			<div class="cell">
-				<div class="numbers tenmilisecond moveten">0 1 2 3 4 5 6 7 8 9</div>
-			</div>
-			<div class="cell">
-				<div class="numbers hundredmilisecond moveten">0 1 2 3 4 5 6 7 8 9</div>
-			</div>
+			</center>
+
+			</p>
+			<br/>
+			<br/>
+			<br/>
+			<div class="boutons">
+				<p>
+				<a class="btn btn-lg btn-success" href="./accueil.php" role="button">Quitter</a>
+				<a class="btn btn-lg btn-success" href="./records.php" role="button">Records</a>
+				</p>		
+			</div>				
 		</div>
-		<br/>
-		<br/>
-		<br/>
-		
-		<div id="timer_controls">
-			<label for="start">Start</label>
-			<label for="stop">Stop</label>
-			<label for="reset">Reset</label>
-		</div>
+		<footer class="footer">
+			<p>Projet Intensif 2016 - Groupe 7 - Watt The Park </p>
+		</footer>
 	</div>
-</div>
+		
+<script type="text/javascript" src="js/timer.js"></script>
 </body>
 	
 </html>

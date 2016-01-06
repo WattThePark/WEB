@@ -17,7 +17,10 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/accueil.css" rel="stylesheet">
+	<link href="css/accueil.css" rel="stylesheet">
+    <link href="css/timer.css" rel="stylesheet">
+	
+	<script type="text/javascript" src="js/timer.js"></script>
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -29,20 +32,15 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  
-   <div class="container">
-		<div class="jumbotron">
+	<body>
+		<div class="container">
+			<div class="jumbotron">
 		
-			<img src="images/logo.png" alt="HTML5 Icon" style="width:200px;height:200px;"/>
-			<h1>Watt The Park</h1>
-			<p class="lead">Le parc qui s'autogénère en électricité par des jeux sportifs qui produisent de l'électricité de façon ludique et qui ont l'avantage de sensibiliser l'utilisateur
-			en convertissant les Watts, une valeur compliquée, en des données de la vie quotidienne. L'énergie produite servira à générer l'éclairage de la place.</p>
-			<p><a class="btn btn-lg btn-success" href="./timer.php" role="button">Commencer !</a></p>
+		
+		
+		
+			</div>
 		</div>
+	</body>
+</html>
 	
-		<footer class="footer">
-			<p>Projet Intensif 2016 - Groupe 7 - Watt The Park </p>
-		</footer>
-    </div> <!-- /container -->
-	
-  </html>

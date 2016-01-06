@@ -35,50 +35,54 @@
 		<div class="jumbotron">
 		
 			<img src="images/logo.png" alt="HTML5 Icon" style="width:200px;height:200px;"/>
-			<h2>Les records</h2>
-			
+			<h2 color="#41C632">Les records</h2>
+			<br/>
+			<br/>
 			<div class="responsive-table-line" style="margin:0px auto;max-width:700px;">
-	<table class="table table-bordered table-condensed table-body-center" >
+	<table class="table table-bordered table-condensed table-body-center CSSTableGenerator" >
 	<thead>
-	<tr>
-	<th>Pseudo</th>
-	<th>Score</th>
-	<th>Date</th>
-	</tr>
-	</thead>
-	<tbody>
-	<tr>
-	<td data-title="pseudo">Bob</td>
-	<td data-title="Score">---</td>
-	<td data-title="Date">0</td>
-	</tr>
-	<td data-title="pseudo">Bob</td>
-	<td data-title="Score">---</td>
-	<td data-title="Date">0</td>
-	</tr>
-	<td data-title="pseudo">Bob</td>
-	<td data-title="Score">---</td>
-	<td data-title="Date">0</td>
-	</tr>
-	<td data-title="pseudo">Bob</td>
-	<td data-title="Score">---</td>
-	<td data-title="Date">0</td>
-	</tr>
-	<td data-title="pseudo">Bob</td>
-	<td data-title="Score">---</td>
-	<td data-title="Date">0</td>
-	</tr>
-	<td data-title="pseudo">Bob</td>
-	<td data-title="Score">---</td>
-	<td data-title="Date">0</td>
+	
+	<td>Pseudo</td>
+	<td>Score</td>
+	<td>Date</td>
 	</tr>
 	
-	 </tbody>
+	
+	<tr>
+	<td bordercolor="vert" data-title="pseudo">Romain</td>
+	<td bordercolor="vert" data-title="Score">150 Watts</td>
+	<td bordercolor="vert" data-title="Date">06/01/2016</td>
+	</tr>
+	<td bordercolor="vert" data-title="pseudo">Ibrahim</td>
+	<td bordercolor="vert" data-title="Score">138 Watts</td>
+	<td bordercolor="vert" data-title="Date">05/01/2016</td>
+	</tr>
+	<td data-title="pseudo">Adil</td>
+	<td data-title="Score">127 Watts</td>
+	<td data-title="Date">05/01/2016</td>
+	</tr>
+	<td data-title="pseudo">Fize</td>
+	<td data-title="Score">115 Watts</td>
+	<td data-title="Date">06/01/2016</td>
+	</tr>
+	<td data-title="pseudo">Aude</td>
+	<td data-title="Score">113 Watts</td>
+	<td data-title="Date">02/01/2016</td>
+	</tr>
+	<td data-title="pseudo">Giovanni</td>
+	<td data-title="Score">111 Watts</td>
+	<td data-title="Date">04/01/2016</td>
+	</tr>
+	
+	
 	</table>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
 	</div>
-		<p><a class="btn btn-lg btn-success" href="./timer.php" role="button">Retour</a></p>
+		<p><a class="btn btn-lg btn-success btnRetour" href="./timer.php" role="button">Retour</a></p>
 		</div>
-	
 		<footer class="footer">
 			<p>Projet Intensif 2016 - Groupe 7 - Watt The Park </p>
 		</footer>

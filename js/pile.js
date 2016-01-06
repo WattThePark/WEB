@@ -38,7 +38,7 @@ delay(function(){
     document.getElementById("mydiv").style.background = 'linear-gradient(to bottom, white 0%,white 0%,rgba(64,187,106,1) 0%)';
     delay(function(){
     // do stuff
-    document.getElementById("image").src="../images/batterie-fin.png";
+    document.getElementById("image").src="./images/batterie-fin.png";
     
     document.getElementById("text").innerHTML="Vous avez généré <br/> ...";
     }, 1000 );
