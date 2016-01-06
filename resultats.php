@@ -35,11 +35,18 @@
 	<body>
 		<div class="container">
 			<div class="jumbotron">
+				<h1> Bravo ! </h1>
+				<br/><br/><br/><br/><br/>
+				<center><div id="mydiv">
+					<img id="image" src="images/batterie-fin.png">
+				</div></center>
+				<br/><br/><br/><br/><br/>
+				<div class="boutons">
+					<p><a class="btn btn-lg btn-success" href="./pseudo.php" role="button">Rentrer votre pseudo</a></p>
+					<p><a class="btn btn-lg btn-success" href="./records.php" role="button">Voir les records</a></p>	
+				</div>	
 		
 		
-		
-		
-			</div>
 		</div>
 	</body>
 </html>

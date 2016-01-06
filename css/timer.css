@@ -1,9 +1,28 @@
-
+#chronotime {
+	padding: 10px;
+	overflow: hidden;
+	display: inline-block;
+	border: 7px solid #35BC35;
+	border-radius: 5px;
+	position: relative;
+	font-family: digital, arial, verdana;
+	text-align: center;
+	color: #35BC35;
+	line-height: 40px;
+	font-size: 35px;
+	
+	top: 0;
+	left: 0;
+	
+	/*Glow to the text*/
+	text-shadow: 0 0 5px rgba(255, 255, 255, 1);
+	
+	
+}
 
 
 .timer {
 	padding: 10px;
-	
 	overflow: hidden;
 	display: inline-block;
 	border: 7px solid #35BC35;
@@ -63,7 +82,7 @@ input[name="controls"] {display: none;}
 	/*The digits move but dont look good. We will use steps now
 	10 digits = 10 steps. You can now see the digits swapping instead of 
 	moving pixel-by-pixel*/
-	animation: moveten 1s steps(10, end) infinite;
+	animation: moveten 1s steps(10, end) infinite;numbers
 	/*By default animation should be paused*/
 	animation-play-state: paused;
 }

@@ -3,20 +3,20 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
     <title>Starter Template for Bootstrap</title>
 
-    <!-- Bootstrap core CSS -->
+    <!-- CSS boostrap -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" rel="stylesheet">
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
+    <!-- CSS propres au projet -->
     <link href="css/accueil.css" rel="stylesheet">
 	<link href="css/pseudo.css" rel="stylesheet">
 
@@ -34,6 +34,7 @@
   <body>
    <div class="container">
 		<div class="jumbotron">
+		
 			<img src="images/logo.png" alt="HTML5 Icon" style="width:200px;height:200px;"/>
 			<h1>Watt The Park</h1>
 			<form id="myForm" type="text" method="post" action="fin.php">
@@ -41,6 +42,8 @@
 			</form>
 		<br/>
 		<br/>
+		
+		<!-- Création du clavier -->
 		<ul id="keyboard">
         <li class="symbol"><span class="off">`</span><span class="on">~</span></li>
         <li class="symbol"><span class="off">1</span><span class="on">!</span></li>
