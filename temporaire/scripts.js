@@ -2,7 +2,7 @@
 //top score
 $(function(){
 	$.ajax({
-			url: 'http://localhost/top/1',
+			url: 'http://192.168.12.249/top/10',
             type: 'get',
             dataType: 'json', // JSON
             success: function(json,status) {
@@ -28,7 +28,7 @@ $(document).on("click", "#b_topn", function (ev){
 	var n=document.getElementById('t_topn').value;
 		console.log(n);
 	$.ajax({
-			url: 'http://localhost/top/'+n,
+			url: 'http://192.168.12.249/top/'+n,
             type: 'get',
             dataType: 'json', // JSON
             success: function(json,status) {

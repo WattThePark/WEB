@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
     <head>
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
         <meta charset="utf-8">
@@ -8,7 +8,9 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>Starter Template for Bootstrap</title>
+        <link rel="icon" href="images/fav.png">
+
+        <title>Les records</title>
 
         <!-- Bootstrap core CSS -->
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
@@ -42,43 +44,51 @@
                     <table class="table table-bordered table-condensed table-body-center CSSTableGenerator" id="tableRecord" >
 
                         
-
+                    	<tr>
+                    		<td>Numéro</td>
                             <td>Pseudo</td>
                             <td>Score</td>
+                            <td>Message</td>
                             <td>Date</td>
+                        </tr>
                             
 
 
                             <script>
-(function() {
-    $.ajax({
-        url: 'http://localhost:3000/top/10',
-    })
-    .done(function(data) {
-        var obj = jQuery.parseJSON(data);
-        console.log(obj)
-            $.each(obj, function(i) {
-                var table = "<tr>";
+								(function() {
+								    $.ajax({
+								        url: 'http://192.168.12.249/top/10',
+								    })
+								    .done(function(data) {
+								        var obj = jQuery.parseJSON(data);
+								        console.log(obj)
+								            $.each(obj, function(i) {
+								                var table = "<tr>";
 
+								                table +="<td data-title='numero'>";
+								                table += i+1 + "</td>";
 
-                table +="<td data-title='pseudo'>";
-                table += obj[i].nameUser + "</td>";
+								                table +="<td data-title='pseudo'>";
+								                table += obj[i].nameUser + "</td>";
 
-                table +="<td data-title='score'>";
-                table += obj[i].score + "</td>";
+								                table +="<td data-title='score'>";
+								                table += obj[i].score + "</td>";
 
-                table +="<td data-title='date'>";
-                table += obj[i].date + "</td>";
+								                table +="<td data-title='feedback'>";
+								                table += obj[i].feedback + "</td>";
 
-                table += "</tr>";
-                console.log(table)
-                $("#tableRecord").append(table);
-            });
-    })
-    .fail(function() {
-        alert("Ajax failed to fetch data")
-    })
-})();
+								                table +="<td data-title='date'>";
+								                table += obj[i].date + "</td>";
+
+								                table += "</tr>";
+								                console.log(table)
+								                $("#tableRecord").append(table);
+								            });
+								    })
+								    .fail(function() {
+								        alert("Ajax failed to fetch data")
+								    })
+								})();
                             </script>
                     </table>
                     <br/>
