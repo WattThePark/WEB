@@ -65,24 +65,37 @@ $(document).on("click", "#b_topn", function (ev){
         });
 	});
 	
-//Dernier feedback
-$(function(){
+//insertion
+//$('#b_send_in').click(function(){
+$(document).on("click", "#b_send_in", function (ev){
+
+	var idMachine = document.getElementById('t_id_in').value,
+	time = document.getElementById('t_time_in').value,
+	feedback = document.getElementById('t_fb_in').value,
+	currentGenerated = document.getElementById('t_courant_in').value,
+	score = document.getElementById('t_score_in').value,
+	nameUser = document.getElementById('t_pseudo_in').value,
+	dateEnd = document.getElementById('t_date_in').value,
+	send = document.getElementById('b_send_in').value;
+	aff = document.getElementById('t_aff_in');
+	
 	$.ajax({
-			url: 'http://localhost/lastfb',
+		
+			url: 'http://localhost/insert/result?',
+			data: 'idMachine=' + idMachine + '&time=' + time + '&feedback=' + feedback + '&currentGenerated=' +
+					currentGenerated + '&score=' + score + '&nameUser=' + nameUser +'&dateEnd=' + dateEnd,
             type: 'get',
-            dataType: 'json', // JSON
+            dataType: 'text', // JSON
             success: function(json,status) {
-				if(json)
-				{
-					var res = JSON.parse(JSON.stringify(json));
-					if(res[0].score) document.getElementById('score').innerHTML = res[0].score;
-					if(res[0].name) document.getElementById('pseudo').innerHTML = res[0].name;
-					if(res[0].feedback) document.getElementById('fb').innerHTML = res[0].feedback;
-				}
+				//alert('Success'+status+' '+JSON.stringify(json));
+			aff.innerHTML="données insérées";
             },
 			error: function(json,status){
-				alert(status);
+				//alert('Erreur: '+status);
 			},
 			
         });
 	});
+
+
+
