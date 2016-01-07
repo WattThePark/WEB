@@ -6,9 +6,9 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+    <link rel="icon" href="images/fav.png">
 
-    <title>Starter Template for Bootstrap</title>
+    <title>Les records</title>
 
     <!-- Bootstrap core CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
@@ -17,10 +17,8 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-	<link href="css/accueil.css" rel="stylesheet">
-    <link href="css/timer.css" rel="stylesheet">
-	
-	<script type="text/javascript" src="js/timer.js"></script>
+    <link href="css/accueil.css" rel="stylesheet">
+	<link href="css/records.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -32,55 +30,56 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-<body>
-	<div class="container">
-	
+  
+   <div class="container">
 		<div class="jumbotron">
 		
-			<!-- Chronomètre -->
-			<span id="chronotime">00:00:00:00</span>
-			<br/><br/><br/>
-			<form name="chronoForm">
-				<a class="btn btn-lg btn-success" id="startstop" name="startstop" value="start!" onClick="chronoStart()">Lancer</a>
-				<a class="btn btn-lg btn-success" id="reset" name="reset" value="reset!" onClick="chronoReset()">Recommencer</a>
-				<script type="text/javascript" src="js/timer.js"></script>
-			</form>
+			<img src="images/logo.png" alt="HTML5 Icon" style="width:200px;height:200px;"/>
+			<h2 color="#41C632">Les records</h2>
 			<br/>
 			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<p>
-			<center>
-			
-			<!-- Pile -->
-			<div id="mydiv">
-				<img id="image" src="images/batterie.png">
-				<h2 id="text"></h2>
-				<script type="text/javascript" src="js/pile.js"></script>
-			</div>
-			</center>
-			</p>
-			<br/>
-			<br/>
-			<br/>
-			
-			<!-- Pavé des boutons -->
-			<div class="boutons">
-				<p>
-				<a class="btn btn-lg btn-success" href="./accueil.php" role="button">Quitter</a>
-				<a class="btn btn-lg btn-success" href="./records.php" role="button">Records</a>
-				</p>		
-			</div>				
+			<div class="responsive-table-line" style="margin:0px auto;max-width:700px;">
+	<table class="table table-bordered table-condensed table-body-center CSSTableGenerator" >
+	<thead>
+	
+	<td>Pseudo</td>
+	<td>Score</td>
+	<td>Date</td>
+	</tr>
+	
+	
+	<tr>
+	<td data-title="pseudo">Romain</td>
+	<td  data-title="Score">1 lampadaire pendant 25 minutes</td>
+	<td  data-title="Date">06/01/2016</td>
+	</tr>
+	<td  data-title="pseudo">Ibrahim</td>
+	<td  data-title="Score">1 lampadaire pendant 13 minutes</td>
+	<td  data-title="Date">02/01/2016</td>
+	</tr>
+	<td data-title="pseudo">Adil</td>
+	<td data-title="Score">1 ampoule pendant 31 minutes</td>
+	<td data-title="Date">03/01/2016</td>
+	</tr>
+	<td data-title="pseudo">Fize</td>
+	<td data-title="Score">1 ampoule pendant 12 minutes</td>
+	<td data-title="Date">05/01/2016</td>
+	</tr>
+	<td data-title="pseudo">Aude</td>
+	<td data-title="Score">1 ampoule pendant 5 minutes</td>
+	<td data-title="Date">04/01/2016</td>
+	</tr>	
+	</table>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	</div>
+		<p><a class="btn btn-lg btn-success btnRetour" href="./timer.html" role="button">Retour</a></p>
 		</div>
-		
-		<!-- Pied de page -->
 		<footer class="footer">
 			<p>Projet Intensif 2016 - Groupe 7 - Watt The Park </p>
 		</footer>
-	</div>
-		
-
-</body>
+    </div> <!-- /container -->
 	
-</html>
+  </html>

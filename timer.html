@@ -6,9 +6,9 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+    <link rel="icon" href="images/fav.png">
 
-    <title>Starter Template for Bootstrap</title>
+    <title>C'est parti !</title>
 
     <!-- Bootstrap core CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
@@ -32,22 +32,55 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-	<body>
-		<div class="container">
-			<div class="jumbotron">
-				<h1> Bravo ! </h1>
-				<br/><br/><br/><br/><br/>
-				<center><div id="mydiv">
-					<img id="image" src="images/batterie-fin.png">
-				</div></center>
-				<br/><br/><br/><br/><br/>
-				<div class="boutons">
-					<p><a class="btn btn-lg btn-success" href="./pseudo.php" role="button">Rentrer votre pseudo</a></p>
-					<p><a class="btn btn-lg btn-success" href="./records.php" role="button">Voir les records</a></p>	
-				</div>	
-		
-		
-		</div>
-	</body>
-</html>
+<body>
+	<div class="container">
 	
+		<div class="jumbotron">
+		
+			<!-- Chronomètre -->
+			<span id="chronotime">00:00:00:00</span>
+			<br/><br/><br/>
+			<form name="chronoForm">
+				<a class="btn btn-lg btn-success" id="startstop" name="startstop" value="start!" onClick="chronoStart()">Lancer le chrono</a>
+				<!--<a class="btn btn-lg btn-success" id="reset" name="reset" value="reset!" onClick="chronoReset()">Recommencer</a>-->
+				<script type="text/javascript" src="js/timer.js"></script>
+			</form>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<p>
+			<center>
+			
+			<!-- Pile -->
+			<div id="mydiv">
+				<img id="image" src="images/batterie.png">
+				<h2 id="text"></h2>
+				
+			</div>
+			</center>
+			</p>
+			<br/>
+			<br/>
+			<br/>
+			
+			<!-- Pavé des boutons -->
+			<div class="boutons">
+				<p>
+				<a class="btn btn-lg btn-success" href="./accueil.html" role="button">Quitter</a>
+				<a class="btn btn-lg btn-success" href="./records.html" role="button">Records</a>
+				</p>		
+			</div>				
+		</div>
+		
+		<!-- Pied de page -->
+		<footer class="footer">
+			<p>Projet Intensif 2016 - Groupe 7 - Watt The Park </p>
+		</footer>
+	</div>
+		
+
+</body>
+	
+</html>
