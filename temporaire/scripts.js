@@ -81,7 +81,7 @@ $(document).on("click", "#b_send_in", function (ev){
 	
 	$.ajax({
 		
-			url: 'http://localhost/insert/result?',
+			url: 'http://192.168.12.249/insert/result?',
 			data: 'idMachine=' + idMachine + '&time=' + time + '&feedback=' + feedback + '&currentGenerated=' +
 					currentGenerated + '&score=' + score + '&nameUser=' + nameUser +'&dateEnd=' + dateEnd,
             type: 'get',
