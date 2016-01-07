@@ -44,10 +44,13 @@
                     <table class="table table-bordered table-condensed table-body-center CSSTableGenerator" id="tableRecord" >
 
                         
-
+                    	<tr>
+                    		<td>Numéro</td>
                             <td>Pseudo</td>
                             <td>Score</td>
+                            <td>Message</td>
                             <td>Date</td>
+                        </tr>
                             
 
 
@@ -62,12 +65,17 @@
 								            $.each(obj, function(i) {
 								                var table = "<tr>";
 
+								                table +="<td data-title='numero'>";
+								                table += i+1 + "</td>";
 
 								                table +="<td data-title='pseudo'>";
 								                table += obj[i].nameUser + "</td>";
 
 								                table +="<td data-title='score'>";
 								                table += obj[i].score + "</td>";
+
+								                table +="<td data-title='feedback'>";
+								                table += obj[i].feedback + "</td>";
 
 								                table +="<td data-title='date'>";
 								                table += obj[i].date + "</td>";
