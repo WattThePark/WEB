@@ -32,15 +32,51 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-	<body>
-		<div class="container">
-			<div class="jumbotron">
-		
-		
-		
-		
-			</div>
-		</div>
-	</body>
-</html>
+<body>
+	<div class="container">
 	
+			
+		<div class="jumbotron">
+			<span id="chronotime">0:00:00:00</span>
+<form name="chronoForm">
+    <input type="button" name="startstop" value="start!" onClick="chronoStart()" />
+    <input type="button" name="reset" value="reset!" onClick="chronoReset()" />
+    <script type="text/javascript" src="js/timer.js"></script>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<p>
+			<center>
+			<div id="mydiv">
+			
+				<img id="image" src="images/batterie.png">
+				<h2 id="text"></h>
+
+				<script type="text/javascript" src="js/pile.js"></script>
+				
+			</div>
+			</center>
+		
+			</p>
+			<br/>
+			<br/>
+			<br/>
+			<div class="boutons">
+				<p>
+				<a class="btn btn-lg btn-success" href="./accueil.php" role="button">Quitter</a>
+				<a class="btn btn-lg btn-success" href="./records.php" role="button">Records</a>
+				</p>		
+			</div>				
+		</div>
+		<footer class="footer">
+			<p>Projet Intensif 2016 - Groupe 7 - Watt The Park </p>
+		</footer>
+	</div>
+		
+
+</body>
+	
+</html>
