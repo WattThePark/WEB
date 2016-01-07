@@ -50,35 +50,35 @@
 
 
                             <script>
-(function() {
-    $.ajax({
-        url: 'http://localhost:3000/top/10',
-    })
-    .done(function(data) {
-        var obj = jQuery.parseJSON(data);
-        console.log(obj)
-            $.each(obj, function(i) {
-                var table = "<tr>";
+								(function() {
+								    $.ajax({
+								        url: 'http://192.168.12.249/top/10',
+								    })
+								    .done(function(data) {
+								        var obj = jQuery.parseJSON(data);
+								        console.log(obj)
+								            $.each(obj, function(i) {
+								                var table = "<tr>";
 
 
-                table +="<td data-title='pseudo'>";
-                table += obj[i].nameUser + "</td>";
+								                table +="<td data-title='pseudo'>";
+								                table += obj[i].nameUser + "</td>";
 
-                table +="<td data-title='score'>";
-                table += obj[i].score + "</td>";
+								                table +="<td data-title='score'>";
+								                table += obj[i].score + "</td>";
 
-                table +="<td data-title='date'>";
-                table += obj[i].date + "</td>";
+								                table +="<td data-title='date'>";
+								                table += obj[i].date + "</td>";
 
-                table += "</tr>";
-                console.log(table)
-                $("#tableRecord").append(table);
-            });
-    })
-    .fail(function() {
-        alert("Ajax failed to fetch data")
-    })
-})();
+								                table += "</tr>";
+								                console.log(table)
+								                $("#tableRecord").append(table);
+								            });
+								    })
+								    .fail(function() {
+								        alert("Ajax failed to fetch data")
+								    })
+								})();
                             </script>
                     </table>
                     <br/>
